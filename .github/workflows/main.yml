@@ -11,8 +11,8 @@ jobs:
                  python-version: '3.x'
              - name: install libiraries
                run: pip insatall -r requirments.txt
-             - name: run test
-               run: pyrhon -m unittrst test.py      
+             - name: run file
+               run: python -m unittrst file.py      
      deploy:
          need: run-tests   
          runs-on: ubuntu-latest
